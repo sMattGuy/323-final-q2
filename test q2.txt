@@ -1,0 +1,30 @@
+//Q2 in java
+/* Given two files that contain sorted integers in ascending order) the task is to merge the two files
+into one file that the third file has all the data in the two files and it is also sorted
+in ascending order.
+Q2: Specs
+II. Inputs: a)file 1 a text file contains a list of sorted integers
+                        b)file 2(args[1]): the same
+II: output:
+        A- file 3(args[3]):
+            b)debugFile(args[3])
+IV. Data Structure
+you CANT use any data structure such as array or linked list except those local variables used in main 
+
+V. Main 
+Step 0: Open all the files args[3]
+Step 1: data1 <- read from file 1// read one input at a time
+                data2 <-read from file2
+                debugFile <- output data1 and data2 with proper captions ie data 1 = ...
+Step 2: if(data <=data2)
+                file 3 <- data1 //Write data1 to file3 
+                data1 <- read from file 1
+                else
+                file3 <- data2
+                data2 <- read from file2 
+    Step 3: repeat step2 while file1 is not empty and file2 is not empty
+    Step4: if file1 is empty and file2 is not empty file <- data2
+    Step 5: if file2 is empty and file1 is not empty file3 <- data2
+    Step 6: if file1 is not empty file3 <- read and output the remaining data from file1 to file 3
+    Step 7: if file2 is not empty file3 <-read and output the remaining data from file2 to file3
+    Step8: close all files*/
